@@ -1,0 +1,51 @@
+.modalDialogShade {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: fixed;
+  left: 0;
+  top: 0;
+  _position: absolute;
+  _top: expression(eval(document.documentElement.scrollTop));
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  text-align: center;
+  overflow: hidden;
+  background-color: #000;
+}
+.modalDialogShadeHide {
+  display: none;
+}
+.modalDialogShadeShow {
+  display: "";
+}
+.modalDialog {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *display: inline;
+  *zoom: 1;
+  _display: inline;
+  _zoom: 1;
+  display: inline-block;
+  left: -9999px;
+  top: 0;
+  vertical-align: middle;
+}
+.modalDialogHide {
+  position: absolute;
+}
+.modalDialogShow {
+  position: static;
+}
+.modalDialog_verline {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+  font-size: 0;
+  line-height: 0;
+}
