@@ -20,6 +20,9 @@
 		show: function( modalDialogNode ) {
 			$modalDialog = $(modalDialogNode);
 			$overLay = $modalDialog.parent();
+			if( $modalDialog.hasClass("md_effect_slit") ) {
+				$overLay.addClass("md_effect_slit_perspective");
+			}	
 			$overLay.addClass("md_overlay_show");
 			$modalDialog.addClass("md_show");
 		},
