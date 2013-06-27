@@ -16,14 +16,14 @@
   z-index: @shadeZindex;
   text-align: center;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000;
   visibility: hidden;
   .transition(~'all 0.3s');
 }
 
 .md_overlay_show {
   visibility: visible;
-  opacity: 1;
+  .opacity(80);
 }
 
 .md_modal {
@@ -49,22 +49,18 @@
 .md_effect_smallBig {
   .scale(0.7);
   .transition(~'all 0.3s');
-  opacity: 0;
 }
 
 .md_effect_smallBig.md_show {
   .scale(1);
-  opacity: 1;
 }
 
 .md_effect_slideInRight {
   .translate(20%, 0);
   .transition(~'all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9)');
-  opacity: 0;
 }
 
 .md_effect_slideInRight.md_show {
   .translate(0, 0);
-  opacity: 1;
 }
 

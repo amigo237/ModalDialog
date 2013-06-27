@@ -14,7 +14,7 @@
   z-index: 1000;
   text-align: center;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000;
   visibility: hidden;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -23,17 +23,18 @@
 }
 .md_overlay_show {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .md_modal {
   margin: 0;
   padding: 0;
   border: 0;
+  display: inline-block;
   *display: inline;
   *zoom: 1;
   _display: inline;
   _zoom: 1;
-  display: inline-block;
   vertical-align: middle;
   visibility: hidden;
 }
@@ -58,7 +59,6 @@
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  opacity: 0;
 }
 .md_effect_smallBig.md_show {
   -webkit-transform: scale(1);
@@ -66,7 +66,6 @@
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
-  opacity: 1;
 }
 .md_effect_slideInRight {
   -webkit-transform: translate(20%, 0);
@@ -78,7 +77,6 @@
   -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   -o-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
-  opacity: 0;
 }
 .md_effect_slideInRight.md_show {
   -webkit-transform: translate(0, 0);
@@ -86,5 +84,4 @@
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
-  opacity: 1;
 }
