@@ -38,6 +38,12 @@
 }
 
 // Transformations
+.transform(@transform) {
+  -webkit-transform: @transform;
+     -moz-transform: @transform;
+       -o-transform: @transform;
+          transform: @transform;
+}
 .rotate(@degrees) {
   -webkit-transform: rotate(@degrees);
      -moz-transform: rotate(@degrees);
@@ -72,4 +78,24 @@
      -moz-transform: translate3d(@x, @y, @z);
        -o-transform: translate3d(@x, @y, @z);
           transform: translate3d(@x, @y, @z);
+}
+.translateStyle(@style) {
+  -webkit-transform-style: @style;
+     -moz-transform-style: @style;
+       -o-transform-style: @style;
+          transform-style: @style;
+}
+
+// Animation
+.animation(@animation) {
+  -webkit-animation: @animation;
+     -moz-animation: @animation;
+       -o-animation: @animation;
+          animation: @animation;
+}
+.perspective(@perspective) {
+  -webkit-perspective: @perspective;
+     -moz-perspective: @perspective;
+       -o-perspective: @perspective;
+          perspective: @perspective;
 }
