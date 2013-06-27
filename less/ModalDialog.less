@@ -1,7 +1,7 @@
 @import "mixins.less";
 
 @shadeZindex: 1000;
-@transition_duration: 0.3;
+@overlayColor: #000;
 
 .md_overlay {
   .reset();
@@ -16,7 +16,7 @@
   z-index: @shadeZindex;
   text-align: center;
   overflow: hidden;
-  background-color: #000;
+  background-color: @overlayColor;
   visibility: hidden;
   .transition(~'all 0.3s');
 }
