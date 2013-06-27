@@ -38,5 +38,5 @@ css实现的模态对话框，显示的时候运用了css的动画效果，不�
 请查看项目文件中 demo/demo.html 文件。
 
 #感谢
-其中的好多动画效果来源于http://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/
+其中的好多动画效果来源于http://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/    
 mixins.less中的有些mixin来源于bootstrap
